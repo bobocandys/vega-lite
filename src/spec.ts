@@ -54,8 +54,7 @@ export interface FacetSpec extends BaseSpec {
 export interface ExtendedFacetSpec extends BaseSpec {
   facet: Facet;
 
-  // FIXME: Ideally "ExtendedUnitSpec | FacetSpec" but this leads to infinite loop in generating schema
-  spec: ExtendedUnitSpec;
+  spec: ExtendedUnitSpec | FacetSpec;
 }
 
 export type Spec = ExtendedUnitSpec | FacetSpec;
