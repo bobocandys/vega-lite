@@ -1,19 +1,21 @@
+// From parent directory
 import {AggregateOp} from '../aggregate';
 import {AxisProperties} from '../axis';
-import {X, Y, TEXT, PATH, ORDER, Channel, UNIT_CHANNELS,  UNIT_SCALE_CHANNELS, NONSPATIAL_SCALE_CHANNELS, supportMark} from '../channel';
+import {X, Y, TEXT, LABEL, PATH, ORDER, Channel, UNIT_CHANNELS,  UNIT_SCALE_CHANNELS, NONSPATIAL_SCALE_CHANNELS, supportMark} from '../channel';
 import {defaultConfig, Config, CellConfig} from '../config';
 import {SOURCE, SUMMARY} from '../data';
 import {Encoding} from '../encoding';
 import * as vlEncoding from '../encoding'; // TODO: remove
 import {FieldDef, FieldRefOption, field} from '../fielddef';
 import {LegendProperties} from '../legend';
-import {Mark, TEXT as TEXTMARK} from '../mark';
+import {Mark, TEXT as TEXTMARK, LABEL as LABELMARK} from '../mark';
 import {Scale, ScaleType} from '../scale';
 import {ExtendedUnitSpec} from '../spec';
 import {getFullName, QUANTITATIVE} from '../type';
 import {duplicate, extend, mergeDeep, Dict} from '../util';
 import {VgData} from '../vega.schema';
 
+// From current directory
 import {parseAxisComponent} from './axis';
 import {applyConfig, FILL_STROKE_CONFIG} from './common';
 import {initMarkConfig} from './config';

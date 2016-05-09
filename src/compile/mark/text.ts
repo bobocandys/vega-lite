@@ -101,3 +101,20 @@ export namespace text {
     return model.config().mark.fontSize;
   }
 }
+
+export namespace label {
+  export function markType() {
+    return 'text';
+  }
+
+  export function properties(model: UnitModel) {
+    // TODO
+    // return text.properties(model, /* TODO */);
+    return undefined;
+  }
+
+  export function labels(model: UnitModel) {
+    // TODO(#240): fill this method
+    return undefined;
+  }
+}

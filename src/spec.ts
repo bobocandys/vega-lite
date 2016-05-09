@@ -7,12 +7,10 @@ import {Config} from './config';
 import {Data} from './data';
 import {Encoding, UnitEncoding, has} from './encoding';
 import {Facet} from './facet';
-import {Mark} from './mark';
+import {Mark, BAR, AREA} from './mark';
 import {Transform} from './transform';
-
 import {COLOR, SHAPE, ROW, COLUMN} from './channel';
 import * as vlEncoding from './encoding';
-import {BAR, AREA} from './mark';
 import {duplicate, extend} from './util';
 
 export interface BaseSpec {

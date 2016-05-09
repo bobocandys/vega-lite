@@ -9,7 +9,7 @@ import {area} from './area';
 import {bar} from './bar';
 import {line} from './line';
 import {point, circle, square} from './point';
-import {text} from './text';
+import {text, label} from './text';
 import {tick} from './tick';
 import {rule} from './rule';
 import {sortField} from '../common';
@@ -18,12 +18,13 @@ const markCompiler = {
   area: area,
   bar: bar,
   line: line,
-  point: point,
-  text: text,
   tick: tick,
   rule: rule,
+  point: point,
   circle: circle,
-  square: square
+  square: square,
+  text: text,
+  label: label
 };
 
 export function parseMark(model: UnitModel): any[] {
