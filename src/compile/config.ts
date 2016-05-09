@@ -3,13 +3,14 @@ import {Config} from '../config';
 import {Encoding} from '../encoding';
 import {isAggregate, has} from '../encoding';
 import {isMeasure} from '../fielddef';
-import {POINT, LINE, TICK, CIRCLE, SQUARE, RULE, Mark} from '../mark';
+import {POINT, LINE, TICK, CIRCLE, SQUARE, RULE, LABEL, Mark} from '../mark';
 import {contains, extend} from '../util';
 
 /**
  * Augment config.mark with rule-based default values.
  */
 export function initMarkConfig(mark: Mark, encoding: Encoding, config: Config) {
+  // TODO: add LABEL mark and change anchor behavior based on markType
    return extend(
      ['filled', 'opacity', 'orient', 'align'].reduce(function(cfg, property: string) {
        const value = config.mark[property];

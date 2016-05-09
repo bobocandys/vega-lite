@@ -6,11 +6,11 @@ export enum Mark {
   RULE = 'rule' as any,
 
   POINT = 'point' as any,
-  CIRCLE = 'circle' as any,
-  SQUARE = 'square' as any,
+    CIRCLE = 'circle' as any,
+    SQUARE = 'square' as any,
 
   TEXT = 'text' as any,
-  LABEL = 'label' as any,
+    LABEL = 'label' as any,
 }
 
 export const AREA = Mark.AREA;
